@@ -1,9 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/login"
+    android:gravity="center"
     tools:context="com.example.admin.learnenglish.LoginActivity">
+    
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@drawable/login_scene"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:padding="10dp">
 
-</android.support.constraint.ConstraintLayout>
+        <com.beardedhen.androidbootstrap.BootstrapCircleThumbnail
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/blur"/>
+
+
+        <EditText
+            android:id="@+id/username"
+            android:hint="@string/username"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            style="@style/editTextStyle"/>
+
+        <EditText
+            android:id="@+id/password"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            style="@style/editTextStyle"/>
+
+        <Button
+            android:id="@+id/signIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sign_in"
+            android:textColor="@color/white"
+            android:background="@drawable/sign_in_btn"
+            />
+
+        <TextView
+            android:id="@+id/register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:textColor="#FFFFFF"
+            android:text="@string/create_new_account" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

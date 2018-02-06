@@ -1,9 +1,61 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/login"
+    android:gravity="center"
     tools:context="com.example.admin.learnenglish.SignUpActivity">
 
-</android.support.constraint.ConstraintLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="@drawable/login_scene"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:padding="10dp">
+
+        <com.beardedhen.androidbootstrap.BootstrapCircleThumbnail
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/blur"/>
+
+        <EditText
+            android:id="@+id/username"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/username"
+            style="@style/editTextStyle"/>
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/password"
+            android:inputType="textPassword"
+            style="@style/editTextStyle"/>
+
+        <EditText
+            android:id="@+id/password2"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:hint="@string/confirm_password"
+            android:inputType="textPassword"
+            style="@style/editTextStyle"/>
+
+        <Button
+            android:id="@+id/signUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sign_up"
+            android:textColor="@color/white"
+            android:background="@drawable/sign_in_btn"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
