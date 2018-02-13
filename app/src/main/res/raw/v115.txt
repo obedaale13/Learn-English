@@ -1,0 +1,29 @@
+Animal & Bird Sounds
+
+The following is a list of animals, birds and some insects with the typical sounds that they make. Notice that they are all verbs.
+
+
+Sounds Animals Make
+Dog - Bark
+Cat - Meow
+Cow - Moo
+Horse - Neigh
+Pig - Oink (Grunt)
+Lion - Roar
+Snake - Hiss
+Donkey - Bray
+Bear - Growl
+Goat - Bleat
+Frog - Croak
+Elephant - Trumpet
+Mouse - Squeak
+Tiger - Growl
+Bee - Buzz
+Sounds Birds Make
+Chicken - Chirp
+Duck - Quack
+Turkey - Gobble
+Owl - Hoot
+Eagle - Screech
+Goose - Honk
+Kookaburra - Laugh

@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Learn English</string>
+    <string name="fifty_famous_stories">Fifty famous stories</string>
+    <string name="sign_in">Sign In</string>
+    <string name="password">password</string>
+    <string name="username">username</string>
+    <string name="create_new_account">Create new account</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="re_enter_the_password">re-enter the password</string>
+    <string name="confirm_password">confirm password</string>
+    <string name="learn_english">Learn English</string>
+    <string name="moto">Language is the \"the infinite use of finite means\"</string>
+</resources>

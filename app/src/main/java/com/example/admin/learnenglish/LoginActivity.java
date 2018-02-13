@@ -42,10 +42,10 @@ public class LoginActivity extends AppCompatActivity {
 
                 String u1 = u.getText().toString();
                 String p1 = p.getText().toString();
+
                 if(u1.length() > 0 && p1.length() > 0){
 
                     SharedPreferences.Editor editor = sharedPreferences.edit();
-
 
                     if(u1.equals(uname) && p1.equals(passw)){
                         startActivity(new Intent(LoginActivity.this, MainActivity.class));

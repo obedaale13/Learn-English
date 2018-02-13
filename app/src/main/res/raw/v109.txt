@@ -1,0 +1,30 @@
+Hotel Dialogues
+
+Below are some typical dialogues between a hotel receptionist at The Grand Woodward Hotel and a guest. Here you will find typical conversations that deal with making reservations, checking in and also checking out.
+
+Making Reservations
+Receptionist: Good morning. Welcome to The Grand Woodward Hotel.
+Client: Hi, good morning. I'd like to make a reservation for the third weekend in September. Do you have any vacancies?
+R: Yes sir, we have several rooms available for that particular weekend. And what is the exact date of your arrival?
+C: The 24th. 
+R: How long will you be staying?
+C: I'll be staying for two nights.
+R: How many people is the reservation for?
+C: There will be two of us.
+R: And would you like a room with twin beds or a double bed? 
+C: A double bed, please.
+R: Great. And would you prefer to have a room with a view of the ocean?
+C: If that type of room is available, I would love to have an ocean view. What's the rate for the room?
+R: Your room is five hundred and ninety dollars per night. Now what name will the reservation be listed under?
+C: Charles Hannighan.
+R: Could you spell your last name for me, please?
+C: Sure. H-A-N-N-I-G-H-A-N
+R: And is there a phone number where you can be contacted?
+C: Yes, my cell phone number is 555-26386.
+R: Great. Now I'll need your credit card information to reserve the room for you. What type of card is it?
+C: Visa. The number is 987654321.
+R: And what is the name of the cardholder?
+C: Charles H. Hannighan. 
+R: Alright, Mr. Hannighan, your reservation has been made for the twenty-fourth of September for a room with a double bed and view of the ocean. Check-in is at 2 o'clock. If you have any other questions, please do not hesitate to call us. 
+C: Great, thank you so much.
+R: My pleasure. We'll see you in September, Mr. Hannighan. Have a nice day.

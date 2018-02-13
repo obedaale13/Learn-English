@@ -1,0 +1,75 @@
+Cooking Instructions
+
+The following verbs frequently appear when reading the cooking instructions in recipes.
+
+add: To put ingredients together; to put one ingredient with the others.
+
+bake: To cook in an oven by using heat.
+
+barbecue: To cook foods (primarily meat) on a grill by using fire or hot coals.
+
+beat: To mix quickly and continually, commonly used with eggs.
+
+boil: To heat water until little bubbles form.
+
+break: To separate into smaller parts by force.
+
+broil: To cook meat or vegetables on a rack with an extremely high temperature.
+
+carve: To cut meat into slices.
+
+chop: To cut into small pieces, generally used with vegetables.
+
+combine: To put two or more things together.
+
+cook: To prepare food by heating it, so the food is not raw.
+
+crush: To cause to separate or flatten by extreme force, often used with garlic.
+
+cut: To separate or divide by using a knife.
+
+fry: To cook by putting the food into extremely hot oil.
+
+grate: To divide into small parts by rubbing on a serrated surface, usually used with cheese.
+
+grease: To coat with oil or butter.
+
+grill: To cook by putting the food on a grill; similar to barbecue.
+
+knead: To press and stretch dough, usually used with making bread.
+
+mix: To combine two or more things using a spoon, spatula, or electric mixer.
+
+measure: To obtain an exact quantity.
+
+melt: to make something become liquid through heating.
+
+microwave: To heat up food within a microwave oven.
+
+mince: to grind food, normally meat, into small pieces. A machine is often used to do this.
+
+open: To remove the top from a can or jar.
+
+peel: To take the skin off of fruits or vegetables.
+
+pour: To transfer liquid from one container to another.
+
+put: To place something in a particular position or location.
+
+roast: To cook in the oven or over a fire.
+
+sauté: To quickly fry food by placing it in hot oil in a frying pan.
+
+scramble: To mix the white and yellow parts of eggs together while cooking them in a pan.
+
+slice: To cut into thin, wide portions.
+
+steam: To cook by placing the food above boiling water. Steam is the vapor that comes from hot water
+
+stir: To mix liquid ingredients by moving a spoon around in a circular motion
+
+stir fry: To cook small pieces of food by moving it quickly in hot oil
+
+wash: To immerse food in water and make sure it becomes clean
+
+weigh: To measure the weight (grams or pounds) or something

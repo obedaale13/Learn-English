@@ -1,0 +1,40 @@
+Simple Tense
+Verb tense tells you when the action happens. There are three main verb tenses: present, past, and future. Each main tense is divided into simple, progressive, perfect, and perfect progressive tenses.
+
+
+Things to remember about simple tense:
+
+     a. Present tense is the original verb form. 
+     b. Past tense has a few patterns. 
+     c. Future tense needs will (shall) + verb. 
+
+run
+
+	I run a marathon twice a year. (present)
+	I ran a marathon last year. (past)
+	I will run a marathon next year. (future)
+eat
+
+	I eat lunch in my office.
+	I ate lunch an hour ago.
+	I will eat lunch in one hour.
+see
+
+	I see a movie once a week.
+	I saw a movie yesterday.
+	I will see a movie tomorrow.
+know
+
+	I know it.
+	I knew it the day before yesterday.
+	I will know it by tomorrow.
+learn
+
+	I learn English.
+	I learned English the last two years.
+	I will learn English next year.
+cook
+
+	I cook my supper every night.
+	I cooked our dinner already.
+	I will cook breakfast tomorrow.

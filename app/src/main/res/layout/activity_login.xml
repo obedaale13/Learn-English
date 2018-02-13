@@ -32,7 +32,7 @@
             android:layout_height="wrap_content"
             style="@style/editTextStyle"/>
 
-        <EditText
+        w<EditText
             android:id="@+id/password"
             android:hint="@string/password"
             android:inputType="textPassword"

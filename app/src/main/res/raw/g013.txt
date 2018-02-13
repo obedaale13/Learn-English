@@ -1,0 +1,44 @@
+Irregular Verbs
+Regular verbs form their past and past participle by adding ed (d).
+
+
+Base Verb     Past     Past Participle
+learn       learned        learned
+study       studied        studied
+cook        cooked         cooked
+solve       solved         solved
+ask         asked          asked
+watch       watched        watched
+listen      listened       listened
+
+
+Irregular verbs do not have definite rules, but there are a few patterns.
+
+
+Base Verb     Past     Past Participle
+grow          grew         grown
+know          knew         known
+begin         began        begun
+draw          drew         drawn
+drive         drove        driven
+fly           flew         flown
+give          gave         given
+speak         spoke        spoken
+swim          swam         swum
+go            went         gone
+take          took         taken
+find          found        found
+spend         spent        spent
+teach         taught       taught
+pay           paid         paid
+feel          felt         felt
+buy           bought       bought
+meet          met          met
+have          had          had
+feed          fed          fed
+keep          kept         kept
+cut           cut          cut
+hit           hit          hit
+set           set          set
+shut          shut         shut
+fit           fit          fit

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.admin.learnenglish.PractiseActivity">
+
+    <TextView
+        android:id="@+id/questionTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="26dp"
+        android:textStyle="bold"
+        android:text="question"
+        android:layout_marginBottom="30dp"/>
+    <RadioGroup
+        android:layout_below="@+id/questionTxt"
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/keyA"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="keyA"/>
+        <RadioButton
+            android:id="@+id/keyB"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="keyB"/>
+        <RadioButton
+            android:id="@+id/keyC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="keyC"/>
+        <RadioButton
+            android:id="@+id/keyD"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="keyD"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnNext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="bottom"
+        android:text="Next" />
+
+</RelativeLayout>
