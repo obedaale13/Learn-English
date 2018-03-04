@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context="com.example.admin.learnenglish.PremiumActivity">
+
+    <TextView
+        android:textSize="20sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/enter_card_number"/>
+
+    <com.beardedhen.androidbootstrap.BootstrapEditText
+        android:id="@+id/etCardNumber"
+        android:fontFamily="sans-serif"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:hint="@string/xxxx"
+        app:bootstrapSize="xl"
+        android:layout_margin="20dp"
+        android:inputType="number"
+        android:maxLength="16"/>
+
+    <com.beardedhen.androidbootstrap.BootstrapButton
+        android:id="@+id/btnActivate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:bootstrapBrand="success"
+        app:bootstrapSize="xl"
+        android:text="@string/activate"/>
+
+</LinearLayout>

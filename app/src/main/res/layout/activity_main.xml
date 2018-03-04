@@ -47,7 +47,7 @@
         android:text="Essay"/>
 
     <Button
-        android:id="@+id/btnContactUs"
+        android:id="@+id/btnPremium"
         style="@style/btnStyle"
         android:layout_width="200dp"
         android:layout_height="wrap_content"

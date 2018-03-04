@@ -10,4 +10,7 @@
     <string name="confirm_password">confirm password</string>
     <string name="learn_english">Learn English</string>
     <string name="moto">Language is the \"the infinite use of finite means\"</string>
+    <string name="enter_card_number">Enter card number</string>
+    <string name="activate">Activate</string>
+    <string name="xxxx">XXXX-XXXX-XXXX-XXXX</string>
 </resources>

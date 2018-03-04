@@ -4,19 +4,18 @@ import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.media.MediaPlayer;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
-import java.io.IOException;
+import com.zookey.universalpreferences.UniversalPreferences;
 
 public class MainActivity extends AppCompatActivity {
 
     private Context context;
-    private Button btnGrammar, btnVocabulary, btnPractise, btnAudioBooks, btnContactUs;
+    private Button btnGrammar, btnVocabulary, btnPractise, btnAudioBooks, btnPremium, btnEssay;
     private static final String[] menu = {"A1 - A2", "B1 - B2", "C1 - C2"};
     private static final String dialogMsg = "Please choose level";
     private static final String[] section = {"g", "v", "p"};
@@ -30,7 +29,8 @@ public class MainActivity extends AppCompatActivity {
         btnVocabulary = (Button) findViewById(R.id.btnVocabulary);
         btnPractise = (Button) findViewById(R.id.btnPractise);
         btnAudioBooks = (Button) findViewById(R.id.btnAudioBooks);
-        btnContactUs = (Button) findViewById(R.id.btnContactUs);
+        btnPremium = (Button) findViewById(R.id.btnPremium);
+        btnEssay = (Button) findViewById( R.id.btnEssay );
         context = getApplicationContext();
 
         btnGrammar.setOnClickListener(new View.OnClickListener() {
@@ -43,7 +43,6 @@ public class MainActivity extends AppCompatActivity {
         btnVocabulary.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                //Toast.makeText(context, "Not implemented yet", Toast.LENGTH_SHORT).show();
                 createDialog(dialogMsg, menu, section[1]);
             }
         });
@@ -64,10 +63,22 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        btnContactUs.setOnClickListener(new View.OnClickListener() {
+        btnEssay.setOnClickListener( new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                boolean isPremium = UniversalPreferences.getInstance().get( "isPremium", false );
+                if(isPremium){
+                    startActivity( new Intent( MainActivity.this, EssayActivity.class ) );
+                }else{
+                    Toast.makeText( context, "Activate your account please", Toast.LENGTH_SHORT ).show();
+                }
+            }
+        } );
+
+        btnPremium.setOnClickListener( new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(getApplicationContext(), "Not implemented yet", Toast.LENGTH_SHORT).show();
+                startActivity( new Intent( MainActivity.this, PremiumActivity.class ) );
             }
         });
 
