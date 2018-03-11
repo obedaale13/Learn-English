@@ -6,11 +6,19 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+import com.google.android.gms.auth.api.Auth;
+import com.google.android.gms.auth.api.signin.GoogleSignIn;
+import com.google.firebase.auth.FirebaseAuth;
 import com.zookey.universalpreferences.UniversalPreferences;
+
+import java.io.File;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -66,8 +74,8 @@ public class MainActivity extends AppCompatActivity {
         btnEssay.setOnClickListener( new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                boolean isPremium = UniversalPreferences.getInstance().get( "isPremium", false );
-                if(isPremium){
+                boolean isActivated = UniversalPreferences.getInstance().get( "isActivated", false );
+                if(isActivated){
                     startActivity( new Intent( MainActivity.this, EssayActivity.class ) );
                 }else{
                     Toast.makeText( context, "Activate your account please", Toast.LENGTH_SHORT ).show();
@@ -82,6 +90,34 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+    }
+
+    public boolean onCreateOptionsMenu(Menu menu) {
+        MenuInflater inflater = getMenuInflater();
+        inflater.inflate(R.menu.main_menu, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()){
+            case R.id.logout:
+                new AlertDialog.Builder(this).setIcon(android.R.drawable.ic_dialog_alert).setTitle("Sign Out")
+                        .setMessage("Are you sure you want to sign out from Google account?\n" +
+                                "Note: all data of the application will be deleted and you can't undo this action.")
+                        .setIcon( R.drawable.warning )
+                        .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                            @Override
+                            public void onClick(DialogInterface dialog, int which) {
+                                FirebaseAuth.getInstance().signOut();
+                                deleteAppData();
+                                UniversalPreferences.getInstance().clear();
+                            }
+                        }).setNegativeButton("No", null).show();
+
+                break;
+        }
+        return super.onOptionsItemSelected(item);
     }
 
     private void createDialog(String title, String menu[], final String section) {
@@ -104,8 +140,27 @@ public class MainActivity extends AppCompatActivity {
         dialog.show();
     }
 
+    private void deleteAppData() {
+        try {
+            // clearing app data
+            String packageName = getApplicationContext().getPackageName();
+            Runtime runtime = Runtime.getRuntime();
+            runtime.exec("pm clear "+packageName);
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        } }
+
     @Override
     public void onBackPressed() {
-        finish();
+        new AlertDialog.Builder(this).setIcon(android.R.drawable.ic_dialog_alert).setTitle("Exit")
+                .setMessage("Are you sure you want to exit?")
+                .setIcon( R.drawable.exit )
+                .setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        finish();
+                    }
+                }).setNegativeButton("No", null).show();
     }
 }

@@ -13,4 +13,8 @@
     <string name="enter_card_number">Enter card number</string>
     <string name="activate">Activate</string>
     <string name="xxxx">XXXX-XXXX-XXXX-XXXX</string>
+    <string name="log_out">Log out</string>
+    <string name="file">File</string>
+    <string name="premium_account">Premium account</string>
+    <string name="per_month">$4.9</string>
 </resources>

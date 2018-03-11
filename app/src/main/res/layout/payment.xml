@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:text="Payment"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical">
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/rad1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="Monthly"
+                    android:textSize="20sp"
+                    android:layout_margin="5dp"/>
+
+                <RadioButton
+                    android:id="@+id/rad2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Yearly"
+                    android:textSize="20sp"
+                    android:layout_margin="5dp"/>
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:gravity="end"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical">
+
+            <com.beardedhen.androidbootstrap.BootstrapLabel
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:bootstrapBrand="success"
+                app:bootstrapHeading="h5"
+                app:bootstrapText="@string/per_month"
+                android:layout_margin="5dp"/>
+
+            <com.beardedhen.androidbootstrap.BootstrapLabel
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:bootstrapBrand="success"
+                app:bootstrapHeading="h5"
+                app:bootstrapText="$49.9"
+                android:layout_margin="5dp"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <com.beardedhen.androidbootstrap.BootstrapButton
+            android:id="@+id/btnCancel"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            app:bootstrapBrand="danger"
+            android:layout_margin="5dp"/>
+
+        <com.beardedhen.androidbootstrap.BootstrapButton
+            android:id="@+id/btnOK"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="Buy"
+            app:bootstrapBrand="success"
+            android:layout_margin="5dp"/>
+    </LinearLayout>
+
+</LinearLayout>

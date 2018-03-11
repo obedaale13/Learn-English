@@ -89,7 +89,7 @@ public class PractiseActivity extends AppCompatActivity {
                             @Override
                             public void onClick(DialogInterface dialogInterface, int i) {
                                 count = 0;
-                                startActivity(new Intent(getApplicationContext(), MainActivity.class));
+                                finish();
                             }
                         })
                         .setCancelable(false);

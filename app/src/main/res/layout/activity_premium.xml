@@ -4,34 +4,59 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
     android:gravity="center"
+    android:orientation="vertical"
     tools:context="com.example.admin.learnenglish.PremiumActivity">
 
-    <TextView
-        android:textSize="20sp"
+    <com.beardedhen.androidbootstrap.BootstrapThumbnail
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/enter_card_number"/>
+        android:layout_marginBottom="40dp"
+        android:src="@drawable/mastercard" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/enter_card_number"
+        android:textSize="20sp" />
 
     <com.beardedhen.androidbootstrap.BootstrapEditText
         android:id="@+id/etCardNumber"
-        android:fontFamily="sans-serif"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textAlignment="center"
-        android:hint="@string/xxxx"
-        app:bootstrapSize="xl"
         android:layout_margin="20dp"
+        android:fontFamily="sans-serif"
+        android:hint="@string/xxxx"
         android:inputType="number"
-        android:maxLength="16"/>
+        android:maxLength="16"
+        android:textAlignment="center"
+        app:bootstrapSize="xl" />
 
-    <com.beardedhen.androidbootstrap.BootstrapButton
-        android:id="@+id/btnActivate"
-        android:layout_width="wrap_content"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:bootstrapBrand="success"
-        app:bootstrapSize="xl"
-        android:text="@string/activate"/>
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp">
+
+        <com.beardedhen.androidbootstrap.BootstrapButton
+            android:id="@+id/btnActivate"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="@string/activate"
+            app:bootstrapBrand="success"
+            app:bootstrapSize="xl"
+            android:layout_margin="5dp"/>
+
+        <com.beardedhen.androidbootstrap.BootstrapButton
+            android:id="@+id/btnPay"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Pay"
+            app:bootstrapBrand="success"
+            app:bootstrapSize="xl"
+            android:layout_margin="5dp"/>
+    </LinearLayout>
 
 </LinearLayout>

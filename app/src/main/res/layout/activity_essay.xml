@@ -1,43 +1,87 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical"
     android:gravity="center"
+    android:orientation="vertical"
     tools:context="com.example.admin.learnenglish.EssayActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:padding="10dp">
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/file" />
+
+            <EditText
+                android:id="@+id/etFilename"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="filename"
+                android:textAlignment="center"
+                android:textStyle="italic"
+                tools:ignore="Deprecated" />
+
+            <Button
+                android:id="@+id/btnChoose"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:text="..." />
+
+        </LinearLayout>
+
+        <com.beardedhen.androidbootstrap.BootstrapButton
+            android:id="@+id/btnUpload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Send"
+            app:bootstrapBrand="success"
+            app:bootstrapSize="xl" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="30dp">
+
+        <com.beardedhen.androidbootstrap.BootstrapButton
+            android:id="@+id/btnDownload"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Download checked essay"
+            app:bootstrapBrand="success"
+            app:bootstrapSize="xl" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="File " />
+            android:layout_marginTop="20dp"
+            android:text="Download link" />
 
         <EditText
-            android:id="@+id/etFilename"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="wrap_content" />
-        <Button
-            android:id="@+id/btnChoose"
-            android:layout_width="wrap_content"
+            android:id="@+id/downloadLink"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="..."/>
-        
+            android:editable="false" />
+
     </LinearLayout>
 
-        <com.beardedhen.androidbootstrap.BootstrapButton
-            android:id="@+id/btnSend"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:bootstrapBrand="success"
-            app:bootstrapSize="xl"
-            android:text="Send"/>
-    
 </LinearLayout>

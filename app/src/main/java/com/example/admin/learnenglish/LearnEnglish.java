@@ -16,6 +16,9 @@ import com.google.android.gms.auth.api.signin.GoogleSignInResult;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.SignInButton;
 import com.google.android.gms.common.api.GoogleApiClient;
+import com.google.android.gms.common.api.ResolvingResultCallbacks;
+import com.google.android.gms.common.api.ResultCallback;
+import com.google.android.gms.common.api.Status;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthCredential;
@@ -29,8 +32,8 @@ import com.zookey.universalpreferences.UniversalPreferences;
 public class LearnEnglish extends AppCompatActivity{
 
     private static final int RC_SIGN_IN = 1;
-    private GoogleApiClient googleApiClient;
-    SignInButton btnSignIn, btnSignOut;
+    public static GoogleApiClient googleApiClient;
+    SignInButton btnSignIn;
     private static final String TAG = "LearnEnglish";
     private FirebaseAuth mAuth;
     private FirebaseAuth.AuthStateListener mAuthListener;
@@ -42,10 +45,6 @@ public class LearnEnglish extends AppCompatActivity{
 
         UniversalPreferences.initialize( this );
         btnSignIn = (SignInButton) findViewById( R.id.btn_signIn );
-        btnSignOut = (SignInButton) findViewById( R.id.btn_signOut );
-
-        setGooglePlusButtonText( btnSignIn, "Sign In" );
-        setGooglePlusButtonText( btnSignOut, "Sign Out" );
 
         mAuth = FirebaseAuth.getInstance();
         mAuthListener = new FirebaseAuth.AuthStateListener() {
@@ -58,7 +57,6 @@ public class LearnEnglish extends AppCompatActivity{
             }
         };
 
-        // Configure Google Sign In
         GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
                 .requestIdToken(getString(R.string.default_web_client_id))
                 .requestEmail()
@@ -87,19 +85,6 @@ public class LearnEnglish extends AppCompatActivity{
     protected void onStart() {
         super.onStart();
         mAuth.addAuthStateListener( mAuthListener );
-    }
-
-    protected void setGooglePlusButtonText(SignInButton signInButton, String buttonText) {
-        // Find the TextView that is inside of the SignInButton and set its text
-        for (int i = 0; i < signInButton.getChildCount(); i++) {
-            View v = signInButton.getChildAt( i );
-
-            if (v instanceof TextView) {
-                TextView tv = (TextView) v;
-                tv.setText( buttonText );
-                return;
-            }
-        }
     }
 
     private void SignIn() {
@@ -144,6 +129,15 @@ public class LearnEnglish extends AppCompatActivity{
                         // ...
                     }
                 });
+    }
+
+    public static void signOut(){
+        Auth.GoogleSignInApi.signOut( googleApiClient ).setResultCallback( new ResultCallback<Status>() {
+            @Override
+            public void onResult(@NonNull Status status) {
+
+            }
+        } );
     }
 
 }
